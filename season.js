@@ -4,9 +4,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let today = new Date();
   let month = today.getMonth();
   let season;
-  
-
-  let whichSeason = function whichSeason(month) {
+    
+  let whichSeason = function(month) {
     if (month >= 1 && month <= 3) {
       season = 'spring';
     } else if (month >= 4 && month <= 6) {
@@ -18,19 +17,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   }
 
-  whichSeason();
+  whichSeason(month);
   
   switch (season) {
     case 'spring':
-      background = 'red';
+      background = 'https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-86875.jpg';
       console.log(`It's spring!`);
       break;
     case 'summer':
-      background = 'yellow';
+      background = 'https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-112387.jpg';
       console.log(`It's summer!`);
       break;
     case 'fall':
-      background = 'orange';
+      background = 'https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-435940.png';
       console.log(`It's fall!`);
       break;
     case 'winter':
