@@ -1,0 +1,19 @@
+body {
+  font-family: monospace;
+  
+}
+
+p {
+  text-align: center;
+}
+
+.main {
+  margin: 0;
+  position: absolute;
+  background:#eee;
+  padding: 20px;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
